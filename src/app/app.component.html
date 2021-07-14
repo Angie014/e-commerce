@@ -1,15 +1,3 @@
-<input type="text" [(ngModel)]="title">
-{{title}}
-<input type="text" [(ngModel)]="power">
-{{power | exponential}}
-
-<button (click)="addItem()">Add Item</button>
+<router-outlet></router-outlet>
 
 
-<div class="product-grid">
-    <app-product 
-    *ngFor="let product of products" 
-    (productCliked)="clickProduct($event)" 
-    [product]="product">
-    </app-product>
-</div>

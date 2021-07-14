@@ -1,2 +1,8 @@
-<app-banner></app-banner>
-<p>home works!</p>
+
+<div class="product-grid">
+    <app-product 
+    *ngFor="let product of products" 
+    (productCliked)="clickProduct($event)" 
+    [product]="product">
+    </app-product>
+</div>
